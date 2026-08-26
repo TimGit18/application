@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7decf80f-19ef-46ee-b7c3-c2a75c871df5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bat/runApplication.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bat/build.bat" beforeDir="false" afterPath="$PROJECT_DIR$/bat/buildApplication.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/domain/application/bootstrap/ApplicationBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/domain/application/bootstrap/ApplicationBootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/domain/application/core/ControlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/domain/application/control/ControlService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
