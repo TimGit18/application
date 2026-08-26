@@ -1,7 +1,7 @@
 package de.domain.application.bootstrap;
 
 import de.domain.application.config.ApplicationConfig;
-import de.domain.application.core.ControlService;
+import de.domain.application.control.ControlService;
 import de.domain.application.logging.LogPathResolver;
 
 import org.apache.logging.log4j.LogManager;
