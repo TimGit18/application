@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 
@@ -25,47 +24,43 @@ public class ApplicationConfigTest {
         assertEquals("Kein Computername definiert", config.getErrorHost());
     }
 
-    /**
     @Test
     public void testGetLogPathMeta() {
-        assertEquals("/path/to/meta/logs", config.getLogPathMeta());
+        assertEquals("C:\\Users\\TSZ\\Daten\\Java\\Applications\\application\\logs", config.getLogPathMeta());
     }
 
     @Test
     public void testGetLogPathPrivat() {
-        assertEquals("/path/to/privat/logs", config.getLogPathPrivat());
+        assertEquals("C:\\Users\\Privat\\Daten\\Java\\Applications\\application\\logs", config.getLogPathPrivat());
     }
 
     @Test
     public void testGetLogPathSchmi() {
-        assertEquals("/path/to/schmi/logs", config.getLogPathSchmi());
+        assertEquals("C:\\Users\\schmi\\Daten\\Java\\Applications\\application\\logs", config.getLogPathSchmi());
     }
 
     @Test
     public void testGetLogPathTest() {
-        assertEquals("/path/to/test/logs", config.getLogPathTest());
+        assertEquals("C:\\Users\\test\\Daten\\Java\\Applications\\application\\logs", config.getLogPathTest());
     }
 
     @Test
     public void testGetMetaPC() {
-        assertEquals("metaPCValue", config.getMetaPC());
+        assertEquals("22H0566", config.getMetaPC());
     }
 
     @Test
     public void testGetPrivatPC() {
-        assertEquals("privatPCValue", config.getPrivatPC());
+        assertEquals("DESKTOP-3NCAR95", config.getPrivatPC());
     }
 
     @Test
     public void testGetSchmiPC() {
-        assertEquals("schmiPCValue", config.getSchmiPC());
+        assertEquals("DESKTOP-Q6O0UGB", config.getSchmiPC());
     }
 
     @Test
     public void testGetTestPC() {
-        assertEquals("testPCValue", config.getTestPC());
-    }*/
-
-
-
+        assertEquals("DESKTOP-LERLCJ6", config.getTestPC());
+    }
 }

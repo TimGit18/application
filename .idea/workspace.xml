@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7decf80f-19ef-46ee-b7c3-c2a75c871df5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/de/domain/application/config/ApplicationConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bat/buildTest.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bat/runTest.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bat/buildApplication.bat" beforeDir="false" afterPath="$PROJECT_DIR$/bat/buildApplication.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bat/runApplication.bat" beforeDir="false" afterPath="$PROJECT_DIR$/bat/runApplication.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/de/domain/application/bootstrap/ApplicationBootstrap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/de/domain/application/bootstrap/ApplicationStart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/de/domain/application/bootstrap/HostNameResolver$LocalHostProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/de/domain/application/bootstrap/HostNameResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/de/domain/application/config/ApplicationConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/de/domain/application/control/ControlService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/de/domain/application/core/ApplicationMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/de/domain/application/logging/LogPathResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/de/domain/application/config/ApplicationConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/de/domain/application/config/ApplicationConfigTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +40,9 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3HpfRapxPQZnAI8p9cod5C9X74r" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,6 +51,7 @@
   "keyToString": {
     "Application.Application.executor": "Run",
     "JUnit.ApplicationConfigTest.executor": "Run",
+    "JUnit.ApplicationConfigTest.testGetLogPathMeta.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -81,9 +96,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApplicationConfigTest.testGetLogPathMeta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.domain.application.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.domain.application.config" />
+      <option name="MAIN_CLASS_NAME" value="de.domain.application.config.ApplicationConfigTest" />
+      <option name="METHOD_NAME" value="testGetLogPathMeta" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ApplicationConfigTest" />
+        <item itemvalue="JUnit.ApplicationConfigTest.testGetLogPathMeta" />
       </list>
     </recent_temporary>
   </component>

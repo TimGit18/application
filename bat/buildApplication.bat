@@ -35,13 +35,13 @@ call :main
     set "projects_root=C:\Users\schmi\Daten\Java\Projects"
     set "app_dir=%projects_root%\application"
     set "build_dir=%app_dir%\build"
-    set "build_logs_dir=%app_dir%\build_logs"
+    set "build_production_dir=%build_dir%\production"
 
     echo set_project_paths...
     echo %projects_root%
     echo %app_dir%
     echo %build_dir%
-    echo %build_logs_dir%
+    echo %build_production_dir%
 
     exit /b
 
@@ -91,12 +91,12 @@ call :main
 
      :: Build-Verzeichnis löschen und neu erstellen
      echo set_cleanup_build...
-     rmdir /s /q %build_dir%
-     if not exist "%build_dir%" (
-         mkdir "%build_dir%"
+     rmdir /s /q %build_production_dir%
+     if not exist "%build_production_dir%" (
+         mkdir "%build_production_dir%"
      )
 
-     echo %build_dir%
+     echo %build_production_dir%
      exit /b
 
 :: ============================================================================================================
@@ -105,7 +105,7 @@ call :main
 :: ============================================================================================================
 :compile_config
     echo compile_config...
-    javac -verbose -encoding utf8 %config_dir%\*java -d %build_dir% -cp %build_dir%
+    javac -verbose -encoding utf8 %config_dir%\*java -d %build_production_dir% -cp %build_production_dir%
 
     echo %config_dir%
     exit /b
@@ -116,7 +116,7 @@ call :main
 :: ============================================================================================================
 :compile_logging
     echo compile_logging...
-    javac -verbose -encoding utf8 %logging_dir%\*java -d %build_dir% -cp %build_dir%;%log4j_api_jar%;%log4j_core_jar%
+    javac -verbose -encoding utf8 %logging_dir%\*java -d %build_production_dir% -cp %build_production_dir%;%log4j_api_jar%;%log4j_core_jar%
 
     echo %logging_dir%
     exit /b
@@ -127,7 +127,7 @@ call :main
 :: ============================================================================================================
 :compile_control
     echo compile_control...
-    javac -verbose -encoding utf8 %control_dir%\*java -d %build_dir% -cp %build_dir%;%log4j_api_jar%;%log4j_core_jar%
+    javac -verbose -encoding utf8 %control_dir%\*java -d %build_production_dir% -cp %build_production_dir%;%log4j_api_jar%;%log4j_core_jar%
 
     echo %control_dir%
     exit /b
@@ -138,7 +138,7 @@ call :main
 :: ============================================================================================================
 :compile_bootstrap
     echo compile_bootstrap...
-    javac -verbose -encoding utf8 %bootstrap_dir%\*java -d %build_dir% -cp %build_dir%;%log4j_api_jar%;%log4j_core_jar%
+    javac -verbose -encoding utf8 %bootstrap_dir%\*java -d %build_production_dir% -cp %build_production_dir%;%log4j_api_jar%;%log4j_core_jar%
 
     echo %bootstrap_dir%
     exit /b
@@ -149,7 +149,7 @@ call :main
 :: ============================================================================================================
  :compile_core
     echo compile_core...
-    javac -verbose -encoding utf8 %core_dir%\*java -d %build_dir% -cp %build_dir%;%log4j_api_jar%;%log4j_core_jar%
+    javac -verbose -encoding utf8 %core_dir%\*java -d %build_production_dir% -cp %build_production_dir%;%log4j_api_jar%;%log4j_core_jar%
 
     echo %core_dir%
     exit /b

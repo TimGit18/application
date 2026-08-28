@@ -28,12 +28,14 @@ call :main
     set "app_dir=%project_root%\application"
     set "properties_dir=%app_dir%\properties"
     set "build_dir=%app_dir%\build"
+    set "build_production_dir=%build_dir%\production"
 
     echo set_project_paths...
     echo %project_root%
     echo %app_dir%
     echo %properties_dir%
     echo %build_dir%
+    echo %build_production_dir%
 
     exit /b
 
@@ -62,6 +64,6 @@ call :main
 
     echo run_main_class...
     cd %app_dir%
-    java -cp %build_dir%;%properties_dir%;%log4j_api_jar%;%log4j_core_jar% de.domain.application.core.ApplicationMain
+    java -cp %build_production_dir%;%properties_dir%;%log4j_api_jar%;%log4j_core_jar% de.domain.application.core.ApplicationMain
 
     exit /b
