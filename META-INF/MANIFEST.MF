@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: de.domain.application.core.ApplicationMain
+Class-Path: file:///C:/Users/schmi/Daten/Java/Applications/application/properties/
+  file:///C:/Users/schmi/Daten/Java/Libraries/apache-log4j-2.25.3-bin/log4j-api-2.25.3.jar
+  file:///C:/Users/schmi/Daten/Java/Libraries/apache-log4j-2.25.3-bin/log4j-core-2.25.3.jar
